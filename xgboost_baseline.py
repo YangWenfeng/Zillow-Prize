@@ -5,8 +5,8 @@
 # 4. Predict the test data.
 # 5. Output to file.
 #
-# Training result: [230] train-mae:0.066641 valid-mae:0.065194
-# Public score: 0.0660345
+# Training result: [189] train-mae:0.066996 valid-mae:0.065312
+# Public score: 0.0656603
 
 import pandas as pd
 import xgboost as xgb
