@@ -20,8 +20,8 @@ test = pd.read_csv('../data/sample_submission.csv')
 
 print('Encoding missing data.')
 for column in properties.columns:
-    properties[column] = properties[column].fillna(-1)
     if properties[column].dtype == 'object':
+        properties[column].fillna(-1, inplace=True)
         label_encoder = LabelEncoder()
         list_value = list(properties[column].values)
         label_encoder.fit(list_value)
