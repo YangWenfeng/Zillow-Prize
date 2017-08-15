@@ -32,7 +32,7 @@ train_with_properties = train.merge(properties, how='left', on='parcelid')
 
 train_index = []
 valid_index = []
-for i in range(len(train_with_properties)):
+for i in xrange(len(train_with_properties)):
     if i % 10 != 0:
         train_index.append(i)
     else:
